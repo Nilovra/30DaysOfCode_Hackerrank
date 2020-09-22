@@ -1,0 +1,17 @@
+n = int(input())
+phoneBook = {}
+for i in range(n):
+    l1 = list(map(str, input().split()))
+    key = l1[0]
+    value = l1[1]
+    phoneBook[key] = value
+
+while True:
+    try:
+        name = input()
+        if name in phoneBook:
+            printf(name + "=" + phoneBook[name])
+        else:
+            printf("Not found")
+    except:
+        brake
