@@ -10,8 +10,8 @@ while True:
     try:
         name = input()
         if name in phoneBook:
-            printf(name + "=" + phoneBook[name])
+            print(name + "=" + phoneBook[name])
         else:
-            printf("Not found")
+            print("Not found")
     except:
         brake
